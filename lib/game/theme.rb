@@ -15,7 +15,9 @@ module Game
 
     def start
       unless @theme.playing?
+        @theme.volume = 1
         @theme.play
+        @fading = false
       end
     end
 
@@ -29,7 +31,6 @@ module Game
       check_keys
       if @fading
         if @theme.volume > 0
-          puts @theme.volume
           @theme.volume -= 0.005
         else
           @theme.stop
@@ -38,7 +39,7 @@ module Game
     end
 
     def check_keys
-      @theme.playing? ? fade : start if @key,pressed
+      @theme.playing? ? fade : start if @key.pressed?
     end
 
   end
