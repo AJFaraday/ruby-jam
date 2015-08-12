@@ -25,7 +25,6 @@ class Window < Gosu::Window
   def update
     close_on_esc
     timer.update
-    timer.check_keys
   end
 
   def draw
