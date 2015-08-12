@@ -9,7 +9,7 @@ class Timer
     @active = false
     @window = window
     @font = Gosu::Font.new(window.x_size / 3)
-    @key = Gosu::KbSpace
+    @start_key = KeyObserver.new(window, Gosu::KbSpace)
   end
 
   def update
@@ -18,15 +18,13 @@ class Timer
       s_elapsed = ms_elapsed.to_f / 1000.0
       @remaining = @remaining_at_last_start - s_elapsed
     end
+    stop if @remaining <= 0
     check_keys
   end
 
   def check_keys
-    if @window.button_down?(@key)
-      @active ? stop : start unless @key_down
-      @key_down = true
-    else
-      @key_down = false
+    if @start_key.pressed?
+      @active ? stop : start
     end
   end
 
