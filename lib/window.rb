@@ -18,13 +18,14 @@ class Window < Gosu::Window
     @y_size = 480
     super @x_size, @y_size
     self.caption = "Ruby JAM"
+    @updatable_objects = []
     init_timer
-    @timer.start
+    init_theme
   end
 
   def update
     close_on_esc
-    timer.update
+    @updatable_objects.each{|ob|ob.update}
   end
 
   def draw
