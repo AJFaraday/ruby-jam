@@ -1,4 +1,4 @@
-type: 'laptop_screen'
+type: 'dev'
 dev:
   x_size: 640
   y_size: 480
