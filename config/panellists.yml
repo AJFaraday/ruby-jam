@@ -1,0 +1,12 @@
+- name1: John
+  name2: Smith
+  buzzer: buzz.ogg
+- name1: Francine
+  name2: Oggden
+  buzzer: buzz.ogg
+- name1: Sam
+  name2: Jones
+  buzzer: buzz.ogg
+- name1: Obi Wan
+  name2: Kenobi
+  buzzer: buzz.ogg

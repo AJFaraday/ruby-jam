@@ -15,6 +15,7 @@ class Window < Gosu::Window
 
   attr_accessor :x_size, :y_size
   attr_accessor :timer
+  attr_accessor :panellists
 
   include Game::Initialisers
 
@@ -24,9 +25,10 @@ class Window < Gosu::Window
     super @x_size, @y_size
     self.caption = "Ruby JAM"
     @updatable_objects = []
+    @drawable_objects = []
     init_timer
     init_theme
-    #init_panellists
+    init_panellists
   end
 
   def update
@@ -43,7 +45,7 @@ class Window < Gosu::Window
   end
 
   def draw
-    timer.draw
+    @drawable_objects.each{|ob| ob.draw}
   end
 
 end
