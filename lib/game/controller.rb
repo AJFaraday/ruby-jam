@@ -1,8 +1,22 @@
 module Game
 
+  # buzzer | byte  | value | bit
+  # 1      |  2    |  1    |  0
+  # 2      |  2    |  32   |  5
+  # 3      |  3    |  4    |  2
+  # 4      |  3    |  128  |  7
+
   class Controller
 
-    def initialize
+    BUZZ_BYTES = [
+      [2, 0],
+      [2, 5],
+      [3, 2],
+      [3, 7]
+    ]
+
+    def initialize(window)
+      @window = window
       @usb_context = LIBUSB::Context.new
       @device = @usb_context.devices(
         idVendor: 1356, idProduct: 2
@@ -12,11 +26,12 @@ module Game
     end
 
     def raw_data
-      @handle.interrupt_transfer(
+      data = @handle.interrupt_transfer(
         :endpoint => 0x81,
         :dataIn => 0x0008,
         :timeout => 10
       )
+      data.bytes.to_a
     end
 
     def reset_device_access
@@ -33,8 +48,14 @@ module Game
 
 
     def update
-      puts raw_data.bytes.to_a.inspect
-    rescue
+      data = raw_data
+      BUZZ_BYTES.each_with_index do |lookup, i|
+        if data[lookup[0]][lookup[1]] == 1
+          puts "buzzer #{i + 1} pushed"
+          @window.panellists[i].buzz
+        end
+      end
+    rescue => er
       # no input, just ignore the error
     end
 

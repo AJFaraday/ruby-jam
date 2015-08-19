@@ -2,7 +2,7 @@ module Game
   module Initialisers
 
     def init_controller
-      @controller = Game::Controller.new
+      @controller = Game::Controller.new(self)
       @updatable_objects << @controller
     end
 
