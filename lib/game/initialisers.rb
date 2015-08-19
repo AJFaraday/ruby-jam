@@ -1,6 +1,11 @@
 module Game
   module Initialisers
 
+    def init_controller
+      @controller = Game::Controller.new
+      @updatable_objects << @controller
+    end
+
     def init_timer
       @timer = Timer.new(self)
       @updatable_objects << @timer

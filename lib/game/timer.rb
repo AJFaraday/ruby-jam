@@ -23,6 +23,7 @@ class Timer
   end
 
   def button_down(id)
+    puts id
     if id == Gosu::KbSpace
       @active ? stop : start
     end

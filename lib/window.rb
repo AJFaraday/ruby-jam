@@ -1,5 +1,7 @@
 require 'gosu'
 require 'yaml'
+require 'libusb'
+
 Dir.glob(File.join(File.dirname(__FILE__), '*.rb')).each do |file|
   require file
 end
@@ -29,6 +31,7 @@ class Window < Gosu::Window
     init_timer
     init_theme
     init_panellists
+    init_controller
   end
 
   def update
