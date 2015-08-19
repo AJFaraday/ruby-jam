@@ -28,14 +28,17 @@ class Window < Gosu::Window
     @updatable_objects.each{|ob|ob.update}
   end
 
-  def draw
-    timer.draw
-  end
-
-  def close_on_esc
-    if button_down?(Gosu::KbEscape)
+  def button_down(id)
+    @updatable_objects.each do |ob|
+      ob.button_down(id) if ob.respond_to?(:button_down)
+    end
+    if id == Gosu::KbEscape
       close
     end
+  end
+
+  def draw
+    timer.draw
   end
 
 end

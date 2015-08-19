@@ -10,7 +10,6 @@ module Game
           'theme.ogg'
         )
       )
-      @key = KeyObserver.new(window, Gosu::KbPeriod)
     end
 
     def start
@@ -28,7 +27,6 @@ module Game
     end
 
     def update
-      check_keys
       if @fading
         if @theme.volume > 0
           @theme.volume -= 0.005
@@ -38,8 +36,10 @@ module Game
       end
     end
 
-    def check_keys
-      @theme.playing? ? fade : start if @key.pressed?
+    def button_down(id)
+      if id == Gosu::KbPeriod
+        @theme.playing? ? fade : start
+      end
     end
 
   end
