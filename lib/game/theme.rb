@@ -37,7 +37,7 @@ module Game
     end
 
     def button_down(id)
-      if id == Gosu::KbPeriod
+      if id == KeyBinding[:music]
         @theme.playing? ? fade : start
       end
     end

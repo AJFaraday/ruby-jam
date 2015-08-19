@@ -1,10 +1,15 @@
 require 'gosu'
+require 'yaml'
 Dir.glob(File.join(File.dirname(__FILE__), '*.rb')).each do |file|
   require file
 end
 Dir.glob(File.join(File.dirname(__FILE__), '**', '*.rb')).each do |file|
   require file
 end
+Dir.glob(File.join(File.dirname(__FILE__), '..', 'config', '*.rb')).each do |file|
+  require file
+end
+
 
 class Window < Gosu::Window
 
@@ -21,10 +26,10 @@ class Window < Gosu::Window
     @updatable_objects = []
     init_timer
     init_theme
+    #init_panellists
   end
 
   def update
-    close_on_esc
     @updatable_objects.each{|ob|ob.update}
   end
 
@@ -32,7 +37,7 @@ class Window < Gosu::Window
     @updatable_objects.each do |ob|
       ob.button_down(id) if ob.respond_to?(:button_down)
     end
-    if id == Gosu::KbEscape
+    if id == KeyBinding[:close]
       close
     end
   end
