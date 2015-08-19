@@ -55,7 +55,7 @@ module Game
           @window.panellists[i].buzz
         end
       end
-    rescue => er
+    rescue
       # no input, just ignore the error
     end
 

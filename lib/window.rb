@@ -22,9 +22,11 @@ class Window < Gosu::Window
   include Game::Initialisers
 
   def initialize
-    @x_size = 640
-    @y_size = 480
-    super @x_size, @y_size
+    config = YAML.load_file(File.join(File.dirname(__FILE__), '..', 'config', 'window.yml'))
+    config = config[config['type']]
+    @x_size = config['x_size']
+    @y_size = config['y_size']
+    super @x_size, @y_size, fullscreen: config['fullscreen']
     self.caption = "Ruby JAM"
     @updatable_objects = []
     @drawable_objects = []
@@ -35,7 +37,7 @@ class Window < Gosu::Window
   end
 
   def update
-    @updatable_objects.each{|ob|ob.update if ob.respond_to?(:update)}
+    @updatable_objects.each { |ob| ob.update if ob.respond_to?(:update) }
   end
 
   def button_down(id)
@@ -48,7 +50,7 @@ class Window < Gosu::Window
   end
 
   def draw
-    @drawable_objects.each{|ob| ob.draw}
+    @drawable_objects.each { |ob| ob.draw }
   end
 
 end

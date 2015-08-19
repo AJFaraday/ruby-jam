@@ -1,0 +1,13 @@
+type: 'laptop_screen'
+dev:
+  x_size: 640
+  y_size: 480
+  fullscreen: false
+laptop_screen:
+  x_size: 1366
+  y_size: 768
+  fullscreen: true
+square_screen:
+  x_size: 1024
+  y_size: 768
+  fullscreen: false
