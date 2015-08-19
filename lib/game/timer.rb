@@ -9,6 +9,8 @@ class Timer
     @active = false
     @window = window
     @font = Gosu::Font.new(window.x_size / 3)
+    @x_pos = @window.x_size / 2
+    @y_pos = (@window.y_size / 2) - (@window.y_size / 15)
   end
 
   def update
@@ -28,7 +30,7 @@ class Timer
 
   def draw
     @font.draw_rel(
-      @remaining.to_i, @window.x_size / 2, (@window.y_size / 2),
+      @remaining.to_i, @x_pos, @y_pos,
       0, 0.5, 0.5
     )
   end

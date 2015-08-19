@@ -50,14 +50,21 @@ module Game
         (@window.y_size / 8) * 5.5,
         0, 0.5, 0.5
       )
-    end
-
-    def update
-
+      @score_font.draw_rel(
+        score.to_s,
+        @center,
+        (@window.y_size / 8) * 7,
+        0, 0.5, 0.5
+      )
     end
 
     def button_down(id)
-
+      case id
+        when KeyBinding.panellist(@index, :up)
+          @score += 1
+        when KeyBinding.panellist(@index, :down)
+          @score -= 1
+      end
     end
 
   end

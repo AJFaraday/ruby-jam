@@ -32,7 +32,7 @@ class Window < Gosu::Window
   end
 
   def update
-    @updatable_objects.each{|ob|ob.update}
+    @updatable_objects.each{|ob|ob.update if ob.respond_to?(:update)}
   end
 
   def button_down(id)
