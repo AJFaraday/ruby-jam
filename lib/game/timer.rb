@@ -40,6 +40,7 @@ class Timer
       @active = true
       @last_start = Gosu.milliseconds
       @remaining_at_last_start = @remaining
+      @window.panellists.each{|p|p.current = false}
     end
   end
 

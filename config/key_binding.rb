@@ -8,10 +8,10 @@ class KeyBinding
   }
 
   PANELLIST_BINDINGS = [
-    {up: Gosu::KbQ, down: Gosu::KbA},
-    {up: Gosu::KbW, down: Gosu::KbS},
-    {up: Gosu::KbE, down: Gosu::KbD},
-    {up: Gosu::KbR, down: Gosu::KbF}
+    {up: Gosu::KbQ, down: Gosu::KbA, buzz: Gosu::Kb1},
+    {up: Gosu::KbW, down: Gosu::KbS, buzz: Gosu::Kb2},
+    {up: Gosu::KbE, down: Gosu::KbD, buzz: Gosu::Kb3},
+    {up: Gosu::KbR, down: Gosu::KbF, buzz: Gosu::Kb4}
   ]
 
   def self.[](action)

@@ -3,11 +3,12 @@ module Game
 
     attr_accessor :index
     attr_accessor :name1, :name2
-    attr_accessor :font, :buzzer, :score
+    attr_accessor :font, :buzzer, :score, :current
 
     def initialize(window, index, config)
       @window = window
       @index = index
+      @current = false
       init_name(config)
       init_score
       init_buzzer(config['buzzer'])
@@ -37,6 +38,14 @@ module Game
       )
     end
 
+    def colour
+      if @current
+        Gosu::Color::CYAN
+      else
+        Gosu::Color::WHITE
+      end
+    end
+
     def draw
       @name_font.draw_rel(
         name1,
@@ -54,7 +63,8 @@ module Game
         score.to_s,
         @center,
         (@window.y_size / 8) * 7,
-        0, 0.5, 0.5
+        0, 0.5, 0.5,
+        1, 1, colour
       )
     end
 
@@ -64,6 +74,16 @@ module Game
           @score += 1
         when KeyBinding.panellist(@index, :down)
           @score -= 1
+        when KeyBinding.panellist(@index, :buzz)
+          buzz
+      end
+    end
+
+    def buzz
+      if @window.timer.active
+        @current = true
+        @buzzer.play
+        @window.timer.stop
       end
     end
 
