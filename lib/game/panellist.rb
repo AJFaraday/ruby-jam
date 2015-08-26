@@ -3,12 +3,12 @@ module Game
 
     attr_accessor :index
     attr_accessor :name1, :name2
-    attr_accessor :font, :buzzer, :score, :current
+    attr_accessor :font, :buzzer, :score, :challenger
 
     def initialize(window, index, config)
       @window = window
       @index = index
-      @current = false
+      @challenger = false
       init_name(config)
       init_score
       init_buzzer(config['buzzer'])
@@ -39,7 +39,7 @@ module Game
     end
 
     def colour
-      if @current
+      if @challenger
         Gosu::Color::CYAN
       else
         Gosu::Color::WHITE
@@ -81,7 +81,7 @@ module Game
 
     def buzz
       if @window.timer.active
-        @current = true
+        @challenger = true
         @buzzer.play
         @window.timer.stop
       end
