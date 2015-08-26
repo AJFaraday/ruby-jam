@@ -27,6 +27,10 @@ module Game
       @window_config['full_screen']
     end
 
+    def topics
+      @raw_config['topics']
+    end
+
   end
 
 end

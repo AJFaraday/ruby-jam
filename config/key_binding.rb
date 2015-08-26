@@ -4,7 +4,9 @@ class KeyBinding
   GLOBAL_BINDINGS = {
     timer: Gosu::KbSpace,
     music: Gosu::KbPeriod,
-    close: Gosu::KbEscape
+    close: Gosu::KbEscape,
+    prev_subject: Gosu::KbO,
+    next_subject: Gosu::KbP
   }
 
   PANELLIST_BINDINGS = [
