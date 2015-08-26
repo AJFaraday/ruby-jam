@@ -69,9 +69,11 @@ module Game
       case id
         when KeyBinding[:next_subject]
           self.next
+          @window.timer.reset
           change_scale
         when KeyBinding[:prev_subject]
           self.previous
+          @window.timer.reset
           change_scale
       end
     end

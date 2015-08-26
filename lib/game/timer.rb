@@ -34,7 +34,7 @@ class Timer
 
   def button_down(id)
     if id == Gosu::KbSpace
-      @active ? stop : start
+      start unless active
     end
   end
 
@@ -62,12 +62,17 @@ class Timer
     end
   end
 
-  def milliseconds
-    (Time.now.to_f * 1000).to_i
-  end
-
   def stop
     @active = false
+  end
+
+  def reset
+    stop
+    @remaining = 60
+  end
+
+  def milliseconds
+    (Time.now.to_f * 1000).to_i
   end
 
 end
