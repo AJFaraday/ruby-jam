@@ -13,7 +13,7 @@ module Game
       file.each_line { |l| @subjects << l.strip }
       @cursor = 0
       @window = window
-      @font = Gosu::Font.new(@window.x_size / 15)
+      @font = Gosu::Font.new(@window.x_size / 3)
       @x_pos = @window.x_size / 2
       @y_pos = (@window.y_size / 6)
       @scale = 1
@@ -52,12 +52,13 @@ module Game
     end
 
     def change_scale
-      size = @font.text_width(current, scale_x = @scale)
-      if size < (@window.x_size / 10) * 9
+      x_size = @font.text_width(current, scale_x = @scale)
+      y_size = @font.height * @scale
+      if x_size < (@window.x_size / 100) * 80
         # increase size
         @scale += 0.01
         change_scale
-      elsif size > (@window.x_size / 20) * 19
+      elsif x_size > (@window.x_size / 100) * 85
         # shrink
         @scale -= 0.01
         change_scale
