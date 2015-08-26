@@ -11,6 +11,13 @@ class Timer
     @font = Gosu::Font.new(window.x_size / 3)
     @x_pos = @window.x_size / 2
     @y_pos = (@window.y_size / 2) - (@window.y_size / 15)
+    @end_sound = Gosu::Sample.new(
+      File.join(
+        File.dirname(__FILE__),
+        '..', '..', 'audio',
+        'end_sound.ogg'
+      )
+    )
   end
 
   def update
@@ -18,8 +25,11 @@ class Timer
       ms_elapsed = Gosu.milliseconds - @last_start
       s_elapsed = ms_elapsed.to_f / 1000.0
       @remaining = @remaining_at_last_start - s_elapsed
+      if @remaining <= 0
+        stop
+        @end_sound.play
+      end
     end
-    stop if @remaining <= 0
   end
 
   def button_down(id)
@@ -30,9 +40,17 @@ class Timer
 
   def draw
     @font.draw_rel(
-      @remaining.to_i, @x_pos, @y_pos,
+      display_time, @x_pos, @y_pos,
       0, 0.5, 0.5
     )
+  end
+
+  def display_time
+    if @remaining > 9.9
+      @remaining.to_i
+    else
+      sprintf('%.1f', @remaining.abs)
+    end
   end
 
   def start
@@ -40,7 +58,7 @@ class Timer
       @active = true
       @last_start = Gosu.milliseconds
       @remaining_at_last_start = @remaining
-      @window.panellists.each{|p|p.current = false}
+      @window.panellists.each { |p| p.current = false }
     end
   end
 
