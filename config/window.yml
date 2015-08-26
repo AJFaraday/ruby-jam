@@ -1,13 +1,12 @@
-type: 'dev'
 dev:
   x_size: 640
   y_size: 480
-  fullscreen: false
+  full_screen: false
 laptop_screen:
   x_size: 1366
   y_size: 768
-  fullscreen: true
+  full_screen: true
 square_screen:
   x_size: 1024
   y_size: 768
-  fullscreen: false
+  full_screen: false

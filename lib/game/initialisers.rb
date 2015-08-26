@@ -1,6 +1,10 @@
 module Game
   module Initialisers
 
+    def init_config
+      @config = Game::Config.new
+    end
+
     def init_controller
       @controller = Game::Controller.new(self)
       @updatable_objects << @controller

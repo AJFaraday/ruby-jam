@@ -12,21 +12,20 @@ Dir.glob(File.join(File.dirname(__FILE__), '..', 'config', '*.rb')).each do |fil
   require file
 end
 
-
 class Window < Gosu::Window
 
   attr_accessor :x_size, :y_size
   attr_accessor :timer
   attr_accessor :panellists
+  attr_accessor :config
 
   include Game::Initialisers
 
   def initialize
-    config = YAML.load_file(File.join(File.dirname(__FILE__), '..', 'config', 'window.yml'))
-    config = config[config['type']]
-    @x_size = config['x_size']
-    @y_size = config['y_size']
-    super @x_size, @y_size, fullscreen: config['fullscreen']
+    init_config
+    @x_size = @config.x_size
+    @y_size = @config.y_size
+    super @x_size, @y_size, fullscreen: @config.full_screen
     self.caption = "Ruby JAM"
     @updatable_objects = []
     @drawable_objects = []
