@@ -15,6 +15,7 @@ Configuration
 -------------
 
 * Check screen resolution, if necessary add it to config/window.yml
+* Put your desired subjects in to a file in topics/
 * modify config/config.yml
 ** window\_type - a config from window.yml, including resolution and a full screen flag.
 ** topics - a file from topics/ with the topics you'll play with
@@ -33,7 +34,7 @@ Keys
 
 |  key       | control          |
 |------------|------------------|
-|   .        | start/stop theme |
+|   .        | start/stop theme music |
 | space      | start timer      |
 |   P        | Next subject     |
 |   O        | Previous subject |
