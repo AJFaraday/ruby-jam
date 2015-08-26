@@ -42,5 +42,11 @@ module Game
       end
     end
 
+    def init_subjects
+      @subjects = Game::Subject.new(self, @config)
+      @drawable_objects << @subjects
+      @updatable_objects << @subjects
+    end
+
   end
 end

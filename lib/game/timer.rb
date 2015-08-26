@@ -10,7 +10,7 @@ class Timer
     @window = window
     @font = Gosu::Font.new(window.x_size / 3)
     @x_pos = @window.x_size / 2
-    @y_pos = (@window.y_size / 2) - (@window.y_size / 15)
+    @y_pos = (@window.y_size / 2) - (@window.y_size / 20)
     @end_sound = Gosu::Sample.new(
       File.join(
         File.dirname(__FILE__),

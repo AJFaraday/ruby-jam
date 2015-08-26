@@ -33,6 +33,7 @@ class Window < Gosu::Window
     init_theme
     init_panellists
     init_controller
+    init_subjects
   end
 
   def update
