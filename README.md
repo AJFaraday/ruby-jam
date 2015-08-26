@@ -32,6 +32,7 @@ Keys
 ----
 
 |  key       | control          |
+|------------|------------------|
 |   .        | start/stop theme |
 | space      | start timer      |
 |   P        | Next subject     |
