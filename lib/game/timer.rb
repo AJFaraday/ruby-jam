@@ -22,7 +22,7 @@ class Timer
 
   def update
     if @active
-      ms_elapsed = Gosu.milliseconds - @last_start
+      ms_elapsed = milliseconds - @last_start
       s_elapsed = ms_elapsed.to_f / 1000.0
       @remaining = @remaining_at_last_start - s_elapsed
       if @remaining <= 0
@@ -46,8 +46,8 @@ class Timer
   end
 
   def display_time
-    if @remaining > 9.9
-      @remaining.to_i
+    if @remaining > 4.9
+      @remaining.ceil
     else
       sprintf('%.1f', @remaining.abs)
     end
@@ -56,10 +56,14 @@ class Timer
   def start
     unless @active
       @active = true
-      @last_start = Gosu.milliseconds
+      @last_start = milliseconds
       @remaining_at_last_start = @remaining
       @window.panellists.each { |p| p.challenger = false }
     end
+  end
+
+  def milliseconds
+    (Time.now.to_f * 1000).to_i
   end
 
   def stop
