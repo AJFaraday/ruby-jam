@@ -35,6 +35,10 @@ module Game
       @raw_config['reporters']
     end
 
+    def reverse
+      @raw_config['reverse']
+    end
+
   end
 
 end

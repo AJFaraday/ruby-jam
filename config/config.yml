@@ -1,10 +1,16 @@
-window_type: dev_wide
+# window config from /config/window.yml
+#
 # dev
 # dev_square
 # dev_wide
 # laptop_screen
 # square_screen
+window_type: dev_wide
+# a .txt file in /topics
 topics: default
+# Reverse order for projector display
+reverse: true
+# list of reporters, from /lib/game/reporters
 reporters:
   - class: Game::Reporters::CommandLineReporter
     width: 100
