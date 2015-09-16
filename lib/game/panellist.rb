@@ -80,8 +80,10 @@ module Game
       case id
         when KeyBinding.panellist(@index, :up)
           @score += 1
+          @window.report
         when KeyBinding.panellist(@index, :down)
           @score -= 1
+          @window.report
         when KeyBinding.panellist(@index, :buzz)
           buzz
       end
