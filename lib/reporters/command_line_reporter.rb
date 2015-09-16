@@ -14,11 +14,19 @@ class CommandLineReporter
     system 'clear'
     spacer
     puts current_subject.center(@width)
-    puts display_timer.center(@width)
+    puts display_time.center(@width)
     spacer
     panellists
     spacer
     puts "Next: #{next_subject}"
+  end
+
+  def display_time
+    if @window.timer.remaining > 4.9
+      @window.timer.remaining.ceil.to_s
+    else
+      sprintf('%.1f', @window.timer.remaining.abs).to_s
+    end
   end
 
   def spacer
@@ -41,10 +49,6 @@ class CommandLineReporter
       print data.to_s.center(@player_width, pad_char)
     end
     puts ''
-  end
-
-  def display_timer
-    @window.timer.remaining.to_s
   end
 
   def current_subject
