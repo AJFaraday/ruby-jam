@@ -14,7 +14,8 @@ module Game
       init_buzzer(config['buzzer'])
       center = (window.x_size / 2)
       gap = window.x_size / 4
-      @center = center + (gap * (index - 1.5))
+      # reversed, house left to house right
+      @center = center + (gap * (((index - 3) * -1) - 1.5))
     end
 
     def init_score

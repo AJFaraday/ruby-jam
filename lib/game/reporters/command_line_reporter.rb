@@ -2,11 +2,14 @@ module Game
   module Reporters
     class CommandLineReporter
 
-      # No config here
+      # config:
+      #   width: Total terminal width
+      #   player_width: the size of the box around each panellist
       def initialize(window, config={})
         @window = window
-        @width = config[:width] || 100
-        @player_width = config[:player_width] || 25
+        @width = config['width'] || 100
+        @player_width = config['player_width'] || 25
+        @panellists = @window.panellists
       end
 
       def report
@@ -34,7 +37,7 @@ module Game
       end
 
       def show_panellists_attr(attr=nil)
-        @window.panellists.each do |panellist|
+        @panellists.each do |panellist|
           data = attr ? panellist.send(attr) : ''
           pad_char = panellist.challenger ? '#' : ' '
           print data.to_s.center(@player_width, pad_char)
