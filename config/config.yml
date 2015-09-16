@@ -5,9 +5,9 @@
 # dev_wide
 # laptop_screen
 # square_screen
-window_type: dev_wide
+window_type: default
 # a .txt file in /topics
-topics: default
+topics: EpicFel
 # Reverse order for projector display
 reverse: true
 # list of reporters, from /lib/game/reporters
@@ -15,3 +15,4 @@ reporters:
   - class: Game::Reporters::CommandLineReporter
     width: 100
     player_width: 25
+    active: true

@@ -51,8 +51,10 @@ module Game
     def init_reporters
       @reporters = []
       @config.reporters.each do |reporter|
-        kls = Object.const_get(reporter.delete('class'))
-        @reporters << kls.new(self, reporter)
+        if reporter.delete('active')
+          kls = Object.const_get(reporter.delete('class'))
+          @reporters << kls.new(self, reporter)
+        end
       end
       report
     end
