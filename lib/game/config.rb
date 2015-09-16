@@ -31,6 +31,10 @@ module Game
       @raw_config['topics']
     end
 
+    def reporters
+      @raw_config['reporters']
+    end
+
   end
 
 end

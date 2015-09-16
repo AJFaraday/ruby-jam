@@ -1,7 +1,9 @@
-window_type: laptop_screen
+window_type: dev_wide
 # dev
 # dev_square
 # dev_wide
 # laptop_screen
 # square_screen
 topics: default
+reporters:
+  - class: Game::Reporters::CommandLineReporter

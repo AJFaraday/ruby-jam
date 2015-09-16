@@ -34,6 +34,7 @@ class Window < Gosu::Window
     init_panellists
     init_controller
     init_subjects
+    init_reporters
   end
 
   def update
@@ -51,6 +52,11 @@ class Window < Gosu::Window
 
   def draw
     @drawable_objects.each { |ob| ob.draw }
+  end
+
+  # This tells all reporters to update their information
+  def report
+    @reporters.each{|r|r.report}
   end
 
 end

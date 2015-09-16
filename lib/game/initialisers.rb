@@ -48,5 +48,13 @@ module Game
       @updatable_objects << @subjects
     end
 
+    def init_reporters
+      @reporters = []
+      @config.reporters.each do |reporter|
+        kls = Object.const_get(reporter.delete('class'))
+        @reporters << kls.new(self, reporter)
+      end
+    end
+
   end
 end
