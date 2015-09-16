@@ -7,3 +7,5 @@ window_type: dev_wide
 topics: default
 reporters:
   - class: Game::Reporters::CommandLineReporter
+    width: 100
+    player_width: 25

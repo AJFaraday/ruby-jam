@@ -18,6 +18,7 @@ class Window < Gosu::Window
   attr_accessor :timer
   attr_accessor :panellists
   attr_accessor :config
+  attr_accessor :subjects
 
   include Game::Initialisers
 

@@ -34,6 +34,10 @@ module Game
       end
     end
 
+    def preview_next
+      @subjects[@cursor + 1] || "---"
+    end
+
     def previous
       target = @cursor - 1
       if target >= 0
@@ -70,10 +74,12 @@ module Game
         when KeyBinding[:next_subject]
           self.next
           @window.timer.reset
+          @window.report
           change_scale
         when KeyBinding[:prev_subject]
           self.previous
           @window.timer.reset
+          @window.report
           change_scale
       end
     end

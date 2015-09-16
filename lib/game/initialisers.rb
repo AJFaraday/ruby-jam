@@ -54,6 +54,7 @@ module Game
         kls = Object.const_get(reporter.delete('class'))
         @reporters << kls.new(self, reporter)
       end
+      report
     end
 
   end
