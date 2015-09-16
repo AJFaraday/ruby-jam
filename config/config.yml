@@ -12,7 +12,7 @@ topics: default
 reverse: true
 # list of reporters, from /lib/game/reporters
 reporters:
-  - class: Reporters::CommandLineReporter
+  - class: CommandLineReporter
     width: 100
     player_width: 25
     active: true
