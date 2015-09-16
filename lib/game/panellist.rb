@@ -48,7 +48,7 @@ module Game
 
     def colour
       if @challenger
-        Gosu::Color::CYAN
+        Gosu::Color::GREEN
       else
         Gosu::Color::WHITE
       end
@@ -59,13 +59,15 @@ module Game
         name1,
         @center,
         (@window.y_size / 8) * 5,
-        0, 0.5, 0.5
+        0, 0.5, 0.5,
+        1, 1, colour
       )
       @name_font.draw_rel(
         name2,
         @center,
         (@window.y_size / 8) * 5.5,
-        0, 0.5, 0.5
+        0, 0.5, 0.5,
+        1, 1, colour
       )
       @score_font.draw_rel(
         score.to_s,
