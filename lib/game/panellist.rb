@@ -84,6 +84,7 @@ module Game
         @challenger = true
         @buzzer.play
         @window.timer.stop
+        @window.report
       end
     end
 
