@@ -22,10 +22,15 @@ class Timer
 
   def update
     if @active
+      start = @remaining.to_i
       ms_elapsed = milliseconds - @last_start
       s_elapsed = ms_elapsed.to_f / 1000.0
       @remaining = @remaining_at_last_start - s_elapsed
+      if @remaining.to_i < start
+        @window.report
+      end
       if @remaining <= 0
+        @window.report
         stop
         @end_sound.play
       end
