@@ -15,4 +15,4 @@ reporters:
   - class: CommandLineReporter
     width: 100
     player_width: 25
-    active: false #true
+    active: true
