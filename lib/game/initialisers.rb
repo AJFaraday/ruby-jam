@@ -6,8 +6,8 @@ module Game
     end
 
     def init_controller
-      @controller = Game::Controller.new(self)
-      @updatable_objects << @controller
+      @controller = RubyBuzz::Device.new
+      @controller.start_watching
     end
 
     def init_timer

@@ -1,14 +1,22 @@
 module Game
   class Panellist
 
+    @@panellists = []
+
     attr_accessor :index
     attr_accessor :name1, :name2
     attr_accessor :font, :buzzer, :score, :challenger
 
+    def self.[](index)
+      @@panellists[index]
+    end
+
     def initialize(window, index, config)
+      @@panellists << self
       @window = window
       @index = index
       @challenger = false
+      init_pad(index)
       init_name(config)
       init_score
       init_buzzer(config['buzzer'])
@@ -23,6 +31,14 @@ module Game
         display_index = @index
       end
       @center = center + (gap * (display_index - 1.5))
+    end
+
+    def init_pad(index)
+      @pad = RubyBuzz::Pad[index]
+      @pad.add_event(
+        :buzz,
+        eval("lambda { Panellist[#{index}].buzz }")
+      )
     end
 
     def init_score
@@ -97,6 +113,7 @@ module Game
         @buzzer.play
         @window.timer.stop
         @window.report
+        @pad.light.on
       end
     end
 
