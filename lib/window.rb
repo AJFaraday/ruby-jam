@@ -1,6 +1,7 @@
 require 'gosu'
 require 'yaml'
 require 'libusb'
+require 'ruby_buzz'
 
 Dir.glob(File.join(File.dirname(__FILE__), '*.rb')).each do |file|
   require file
@@ -58,6 +59,11 @@ class Window < Gosu::Window
   # This tells all reporters to update their information
   def report
     @reporters.each{|r|r.report}
+  end
+
+  def close
+    RubyBuzz::Light.all_off
+    super
   end
 
 end

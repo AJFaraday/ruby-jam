@@ -64,6 +64,7 @@ class Timer
       @last_start = milliseconds
       @remaining_at_last_start = @remaining
       @window.panellists.each { |p| p.challenger = false }
+      RubyBuzz::Light.all_off
     end
   end
 
