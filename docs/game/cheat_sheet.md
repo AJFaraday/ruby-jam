@@ -1,6 +1,14 @@
 Panellist Cheat Sheet
 =====================
 
+Golden Rule!
+------------
+
+Relax, take it easy and have fun.
+
+It's a little competitive, but ultimately we're all pulling together to make an
+enjoyable, entertaining and informative show. Winning isn't everything.
+
 Manners
 -------
 
