@@ -15,12 +15,13 @@ Manners
 Some general manners guidelines for panel games, and specifically Just A Minute
 
 * Not a word until round one. The introduction primes the audience for the show, this is easiest to do with one voice.
-* Avoid speaking over each other, listening to two voices is hard work.
-* When the timer is running, one speaker is being featured, listen closely.
+* Good humour is hte most important ingredient.
+** Avoid speaking over each other, listening to two voices is hard work.
+* When the timer is running, one speaker is being featured. Listen closely.
 * There is often some argument following challenges.
   * This is part of the game but KEEP IT FRIENDLY!
   * The hosts word goes. This isn't just megalomania, it helps to keep the game moving.
-* If you are harsh in your challenges, or unkind in your arguments, you may find harsh challenges in return are more likely to be accepted.  
+* If you are harsh in your challenges, or unkind in your arguments, you may find harsh challenges against you are more likely to be accepted.  
 
 Principal Rules
 ---------------
@@ -32,18 +33,34 @@ Hesitation:
 
 * Any lengthy pause
 * Any hedging sound (erm, um, ahhh etc.)
-* Slowing down until they're almost stopped
+* Slowing down until they're almost stopped.
 * Let people take a breath after sentences.
 
 Repetition:
 
-* Repeating any word that panellist has said during that round.
+* Repeating any word that they have said during that round.
 * If they are challenged, then regain the subject, they can not repeat words from their first session.
 * Panellists are allowed to repeat words that are in the topic.
-* Be lenient about join words (I, and, to etc.), let one repetition go, but challenge on three.
+* Be lenient about join words (I, and, to etc.), let one repetition go, but challenge on the third use.
 * In TechJAM, they are allowed to repeat common short forms (e.g. if the topic is Hypertext Markup Language, you may repeat HTML).
 
 Deviation:
 
-* Leaving the subject, changing to another topic.
+* Leaving the subject, changing to another topic. (There's some wiggle-room here, based on entertainement value and the hosts judgement).
 * Saying something patently untrue about the topic (there will be a judgement call about this type of challenge).
+
+Tactics
+-------
+
+* Speaking in a slow, measured way is beneficial. Just don't slow down to a stop.
+* It can be legitimate to leave the topic if you re-define it early on (e.g. "I've got a dog called Single Responsibility Principal...")
+* If you don't know about a topic, you could try declaring that you know nothing about it, or declaring that you know it very well (instead of actually talking about it). This probably won't last the minute, but it's fairly entertaining and better than simply stopping.
+
+Research
+--------
+
+Depending how recently it has been broadcast, you can hear actual shows on the BBC at: http://www.bbc.co.uk/programmes/b006s5dp/episodes/player
+
+Previous TechJAM recordings: 
+
+* http://brightonruby.com/2015/just-a-ruby-minute-andrew-faraday/
