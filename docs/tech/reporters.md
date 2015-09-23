@@ -34,6 +34,7 @@ Contract for a reporter
   * **config:** (hash) Any additional configuration, passed
                 in from config/config.yml
 * A 'report' method which will be called when data changes.
+  * Report may read data from ruby-jam, but not change any.
 
 Adding a reporter
 -----------------
