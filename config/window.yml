@@ -17,7 +17,7 @@ laptop_screen:
 square_screen:
   x_size: 1024
   y_size: 768
-  full_screen: false
+  full_screen: true
 full_hd:
   x_size: 1920
   y_size: 1080
