@@ -110,10 +110,10 @@ module Game
     def buzz
       if @window.timer.active
         @challenger = true
-        @buzzer.play
         @window.timer.stop
-        @window.report
         @pad.light.on
+        @buzzer.play
+        @window.report
       end
     end
 

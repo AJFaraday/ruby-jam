@@ -58,7 +58,11 @@ class Window < Gosu::Window
 
   # This tells all reporters to update their information
   def report
-    @reporters.each{|r|r.report}
+    @reporters.each do |reporter|
+      Thread.new do
+        reporter.report
+      end
+    end
   end
 
   def close

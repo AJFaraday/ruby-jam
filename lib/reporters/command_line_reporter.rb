@@ -1,5 +1,7 @@
 class CommandLineReporter
 
+  attr_accessor :text
+  
   # config:
   #   width: Total terminal width
   #   player_width: the size of the box around each panellist
@@ -11,16 +13,26 @@ class CommandLineReporter
   end
 
   def report
-    system 'clear'
+    @text = ''
     spacer
-    puts current_subject.center(@width)
-    puts display_time.center(@width)
+    line current_subject.center(@width)
+    line display_time.center(@width)
     spacer
     panellists
     spacer
-    puts "Next: #{next_subject}"
+    line "Next: #{next_subject}"
+    system 'clear'
+    puts @text
   end
 
+  def line(content)
+    text << "#{content}\n"
+  end
+  
+  def part_line(content)
+    text << content.to_s
+  end
+  
   def display_time
     if @window.timer.remaining > 4.9
       @window.timer.remaining.ceil.to_s
@@ -30,7 +42,7 @@ class CommandLineReporter
   end
 
   def spacer
-    2.times { puts '' }
+    2.times { line '' }
   end
 
   def panellists
@@ -46,9 +58,9 @@ class CommandLineReporter
     @panellists.each do |panellist|
       data = attr ? panellist.send(attr) : ''
       pad_char = panellist.challenger ? '#' : ' '
-      print data.to_s.center(@player_width, pad_char)
+      part_line data.to_s.center(@player_width, pad_char)
     end
-    puts ''
+    line ''
   end
 
   def current_subject
