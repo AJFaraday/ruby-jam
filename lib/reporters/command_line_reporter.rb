@@ -15,14 +15,18 @@ class CommandLineReporter
   def report
     @text = ''
     spacer
+    line current_starter.center(@width)
     line current_subject.center(@width)
     line display_time.center(@width)
     spacer
     panellists
     spacer
     line "Next: #{next_subject}"
+    line next_starter
     system 'clear'
     puts @text
+  rescue => er
+    puts er.message
   end
 
   def line(content)
@@ -69,6 +73,18 @@ class CommandLineReporter
 
   def next_subject
     @window.subjects.preview_next
+  end
+
+  def current_starter
+    index = @window.subjects.round_no - @window.config.intro_rounds
+    panellist = Game::Panellist[index % Game::Panellist.count]
+    "Current Starter: #{panellist.name1} #{panellist.name2}"
+  end
+
+  def next_starter
+    index = @window.subjects.round_no + 1 - @window.config.intro_rounds
+    panellist = Game::Panellist[index % Game::Panellist.count]
+    "Next Starter: #{panellist.name1} #{panellist.name2}"
   end
 
 end

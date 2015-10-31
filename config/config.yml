@@ -7,9 +7,11 @@
 # square_screen
 window_type: dev_wide
 # a .txt file in /topics
-topics: EpicFel
+topics: default
 # Reverse order for projector display
 reverse: true
+# How many 'topics' will be displayed before round 1
+intro_rounds: 2
 # list of reporters, from /lib/game/reporters
 reporters:
   - class: CommandLineReporter

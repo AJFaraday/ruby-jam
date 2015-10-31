@@ -11,6 +11,10 @@ module Game
       @@panellists[index]
     end
 
+    def self.count
+      @@panellists.length
+    end
+
     def initialize(window, index, config)
       @@panellists << self
       @window = window

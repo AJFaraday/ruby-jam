@@ -32,6 +32,8 @@ change config/config.yml
   * full_hd - A full HD, 1080 16:3 screen, full.
   * If required, add more settings in config/window.yml
 * **topics:** Topics for the game, a .txt file in topics/
+* **intro_rounds:** The number of 'dummy' rounds before the game starts.
+                    Sometimes it's just the title, sometimes title, then introduction.
 * **reverse:** Boolean, should the projection display be in
                reverse order? If the projection is behind
                the panel, set this to true.

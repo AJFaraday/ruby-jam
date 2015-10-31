@@ -39,6 +39,10 @@ module Game
       @raw_config['reverse']
     end
 
+    def intro_rounds
+      @raw_config['intro_rounds']
+    end
+
   end
 
 end

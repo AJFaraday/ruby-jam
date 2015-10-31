@@ -38,6 +38,10 @@ module Game
       @subjects[@cursor + 1] || "---"
     end
 
+    def round_no
+      @cursor
+    end
+
     def previous
       target = @cursor - 1
       if target >= 0
