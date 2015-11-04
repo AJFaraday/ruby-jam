@@ -53,7 +53,7 @@ module Game
     def init_name(config)
       @name1 = config['name1']
       @name2 = config['name2']
-      @name_font = Gosu::Font.new(@window.x_size / 15)
+      @name_font = Gosu::Font.new(@window.x_size / 20)
     end
 
     def init_buzzer(sample_name)
