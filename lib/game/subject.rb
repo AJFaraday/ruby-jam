@@ -15,7 +15,7 @@ module Game
       @window = window
       @font = Gosu::Font.new(@window.x_size / 3)
       @x_pos = @window.x_size / 2
-      @y_pos = (@window.y_size / 6)
+      @y_pos = (@window.y_size / 8)
       @scale = 1
       change_scale
     end

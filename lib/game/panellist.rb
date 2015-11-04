@@ -47,7 +47,7 @@ module Game
 
     def init_score
       @score = 0
-      @score_font = Gosu::Font.new(@window.x_size / 5)
+      @score_font = Gosu::Font.new(@window.x_size / 6)
     end
 
     def init_name(config)
