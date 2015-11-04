@@ -11,6 +11,10 @@ module Game
       @@panellists[index]
     end
 
+    def self.count
+      @@panellists.length
+    end
+
     def initialize(window, index, config)
       @@panellists << self
       @window = window
@@ -43,13 +47,13 @@ module Game
 
     def init_score
       @score = 0
-      @score_font = Gosu::Font.new(@window.x_size / 5)
+      @score_font = Gosu::Font.new(@window.x_size / 6)
     end
 
     def init_name(config)
       @name1 = config['name1']
       @name2 = config['name2']
-      @name_font = Gosu::Font.new(@window.x_size / 15)
+      @name_font = Gosu::Font.new(@window.x_size / 20)
     end
 
     def init_buzzer(sample_name)

@@ -15,7 +15,7 @@ module Game
       @window = window
       @font = Gosu::Font.new(@window.x_size / 3)
       @x_pos = @window.x_size / 2
-      @y_pos = (@window.y_size / 6)
+      @y_pos = (@window.y_size / 8)
       @scale = 1
       change_scale
     end
@@ -36,6 +36,10 @@ module Game
 
     def preview_next
       @subjects[@cursor + 1] || "---"
+    end
+
+    def round_no
+      @cursor
     end
 
     def previous

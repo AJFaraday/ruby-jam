@@ -55,12 +55,14 @@ Tactics
 * Speaking in a slow, measured way is beneficial. Just don't slow down to a stop.
 * It can be legitimate to leave the topic if you re-define it early on (e.g. "I've got a dog called Single Responsibility Principal...")
 * If you don't know about a topic, you could try declaring that you know nothing about it, or declaring that you know it very well (instead of actually talking about it). This probably won't last the minute, but it's fairly entertaining and better than simply stopping.
+* Using lists is a common strategy.
+** This can be risky, you risk repeating yourself, or repeating the word 'and' too many times.
+** Lists of synonyms can be used in most sentences. E.g. "I learned everything I know about this topic from my mentor, adviser, teacher, confidant, role model... "
+** Most topics could lead to a list. E.g. with the topic of "How I like to work" you could say "I like to work remotely whilst travelling between various cities such as London, Paris, Milan..."
 
 Research
 --------
 
 Depending how recently it has been broadcast, you can hear actual shows on the BBC at: http://www.bbc.co.uk/programmes/b006s5dp/episodes/player
 
-Previous TechJAM recordings: 
-
-* http://brightonruby.com/2015/just-a-ruby-minute-andrew-faraday/
+Previous TechJAM recordings can be found at http://www.andrewfaraday.com/p/techjam.html
