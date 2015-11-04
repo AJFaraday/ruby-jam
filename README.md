@@ -46,3 +46,13 @@ Keys
 | Q, W, E, R | Increase score   |
 | A, S, D, F | Decrease score   |
 | esc        | Exit             |
+
+Docs
+----
+
+There's some more in-depth information available in the docs/ folder.
+
+/docs/game/cheat_sheet.md
+
+This is information about how to play the game of Just A Minute. Distribute this
+to all panellists prior to a game. 
