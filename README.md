@@ -56,3 +56,13 @@ There's some more in-depth information available in the docs/ folder.
 
 This is information about how to play the game of Just A Minute. Distribute this
 to all panellists prior to a game. 
+
+/docs/game/setup.md
+
+This is a setup checklist to ensure everything is ready for the show.
+Including detailed information about the config files.
+
+/docs/tech/reporters.md
+
+Explains the purpose of ruby-jam reporters. What is required to make one
+and how they can be used and configured.
