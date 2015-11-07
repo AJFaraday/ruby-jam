@@ -15,13 +15,17 @@ Manners
 Some general manners guidelines for panel games, and specifically Just A Minute
 
 * Not a word until round one. The introduction primes the audience for the show, this is easiest to do with one voice.
-* Good humour is hte most important ingredient.
+* Good humour is the most important ingredient.
 ** Avoid speaking over each other, listening to two voices is hard work.
 * When the timer is running, one speaker is being featured. Listen closely.
 * There is often some argument following challenges.
   * This is part of the game but KEEP IT FRIENDLY!
   * The hosts word goes. This isn't just megalomania, it helps to keep the game moving.
-* If you are harsh in your challenges, or unkind in your arguments, you may find harsh challenges against you are more likely to be accepted.  
+* If you are harsh in your challenges, or unkind in your arguments, you may find harsh challenges against you are more likely to be accepted.
+* Be clear about your challenges, buzz, and declare your challenge (if your buzzer has lit up)
+  * *buzz* hesitation
+  * *buzz* repetition of [word]
+  * *buzz* deviation (followed by why you think they have deviated)
 
 Principal Rules
 ---------------
