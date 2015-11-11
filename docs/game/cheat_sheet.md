@@ -47,7 +47,6 @@ Hesitation:
 Repetition:
 
 * Repeating any word that they have said during that round.
-* Repeating any word that they have said during that round.
 * If they are challenged, then regain the subject, they can not repeat words from their first session.
 * Panellists are allowed to repeat words that are in the topic.
 * Be lenient about join words (I, and, to etc.), let one repetition go, but challenge on the third use.
