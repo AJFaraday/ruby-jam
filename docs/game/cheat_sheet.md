@@ -12,8 +12,8 @@ enjoyable, entertaining and informative show. Winning isn't everything.
 Manners
 -------
 
-Panel games, much like the greatness of Great Britain, are founded on
-good manners. Here are some guidelines that make Just A Minute flow smoothly.
+Panel games, like so many things in life, are founded on good manners.
+Here are some guidelines that make Just A Minute flow smoothly.
 
 * Not a word until round one. The introduction primes the audience for the show, this is easiest to do with one voice.
 * Good humour is the most important ingredient.
