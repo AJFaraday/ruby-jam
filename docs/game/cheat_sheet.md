@@ -21,7 +21,7 @@ Here are some guidelines that make Just A Minute flow smoothly.
 * When the timer is running, one speaker is being featured. Listen closely.
 * There is often some argument following challenges.
   * This is part of the game but KEEP IT FRIENDLY!
-  * The host's word goes. This isn't just megalomania, it helps to keep the game moving.
+  * The hosts word goes. This isn't just megalomania, it helps to keep the game moving.
 * If you are harsh in your challenges, or unkind in your arguments, you may find harsh challenges against you are more likely to be accepted.
 * Be clear about your challenges. Buzz and then declare your challenge (if your buzzer has lit up). For example,
   * *buzz* "hesitation"
