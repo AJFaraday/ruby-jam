@@ -32,8 +32,8 @@ Principal Rules
 ---------------
 
 The rules of Just A Minute are simple. Each panellist must attempt to
-speak on a given topic for three minutes without hesitation,
-repetition or deviation.
+speak on a given topic for one minute without hesitation, repetition
+or deviation.
 
 Here are a few guidelines on when you can and can't challenge.
 
