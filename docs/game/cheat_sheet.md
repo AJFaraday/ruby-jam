@@ -16,7 +16,7 @@ Some general manners guidelines for panel games, and specifically Just A Minute
 
 * Not a word until round one. The introduction primes the audience for the show, this is easiest to do with one voice.
 * Good humour is the most important ingredient.
-** Avoid speaking over each other, listening to two voices is hard work.
+* Avoid speaking over each other, listening to two voices is hard work.
 * When the timer is running, one speaker is being featured. Listen closely.
 * There is often some argument following challenges.
   * This is part of the game but KEEP IT FRIENDLY!
