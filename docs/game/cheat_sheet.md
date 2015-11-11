@@ -69,4 +69,6 @@ Research
 
 Depending how recently it has been broadcast, you can hear actual shows on the BBC at: http://www.bbc.co.uk/programmes/b006s5dp/episodes/player
 
+Some episodes are also available on YouTube, for example https://www.youtube.com/watch?v=D87DN_15r5Q
+
 Previous TechJAM recordings can be found at http://www.andrewfaraday.com/p/techjam.html
