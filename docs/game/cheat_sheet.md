@@ -22,7 +22,7 @@ Some general manners guidelines for panel games, and specifically Just A Minute
   * This is part of the game but KEEP IT FRIENDLY!
   * The hosts word goes. This isn't just megalomania, it helps to keep the game moving.
 * If you are harsh in your challenges, or unkind in your arguments, you may find harsh challenges against you are more likely to be accepted.
-* Be clear about your challenges, buzz, and declare your challenge (if your buzzer has lit up)
+* Be clear about your challenges, buzz, and declare your challenge (if your buzzer has lit up). For example,
   * *buzz* hesitation
   * *buzz* repetition of [word]
   * *buzz* deviation (followed by why you think they have deviated)
@@ -38,7 +38,7 @@ Hesitation:
 * Any lengthy pause
 * Any hedging sound (erm, um, ahhh etc.)
 * Slowing down until they're almost stopped.
-* Let people take a breath after sentences.
+* But! Let people take a breath after sentences.
 
 Repetition:
 
@@ -57,8 +57,8 @@ Tactics
 -------
 
 * Speaking in a slow, measured way is beneficial. Just don't slow down to a stop.
-* It can be legitimate to leave the topic if you re-define it early on (e.g. "I've got a dog called Single Responsibility Principal...")
-* If you don't know about a topic, you could try declaring that you know nothing about it, or declaring that you know it very well (instead of actually talking about it). This probably won't last the minute, but it's fairly entertaining and better than simply stopping.
+* It ~can~ be legitimate to leave the topic if you re-define it early on (e.g. "I've got a dog called Single Responsibility Principal..."), but if you go too far this is likely to be challenged.
+* If you don't know about a topic, you could try talking about the fact that you know nothing about it, or about knowing it very well (instead of actually talking about it). This probably won't last the minute, but it's fairly entertaining and better than simply stopping.
 * Using lists is a common strategy.
   * This can be risky, you risk repeating yourself, or repeating the word 'and' too many times.
   * Lists of synonyms can be used in most sentences. E.g. "I learned everything I know about this topic from my mentor, adviser, teacher, confidant, role model... "
