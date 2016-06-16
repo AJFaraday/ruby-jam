@@ -4,4 +4,4 @@ ruby '2.2.1'
 
 gem 'gosu', '0.9.2'
 gem 'libusb', '0.5.0'
-gem 'ruby_buzz'
+gem 'ruby_buzz', '0.0.3'

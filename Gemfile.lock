@@ -5,7 +5,7 @@ GEM
     gosu (0.9.2)
     libusb (0.5.0)
       ffi (>= 1.0)
-    ruby_buzz (0.0.1)
+    ruby_buzz (0.0.3)
 
 PLATFORMS
   ruby
@@ -13,7 +13,4 @@ PLATFORMS
 DEPENDENCIES
   gosu (= 0.9.2)
   libusb (= 0.5.0)
-  ruby_buzz
-
-BUNDLED WITH
-   1.10.5
+  ruby_buzz (= 0.0.3)
