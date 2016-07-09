@@ -72,6 +72,7 @@ Tactics
   * This can be risky, you risk repeating yourself, or repeating the word 'and' too many times.
   * Lists of synonyms can be used in most sentences. E.g. "I learned everything I know about this topic from my mentor, adviser, teacher, confidant, role model... "
   * Most topics could lead to a list. E.g. with the topic of "How I like to work" you could say "I like to work remotely whilst travelling between various cities such as London, Paris, Milan..."
+* BEWARE in-jokes: you may know other panellists, but the audience do not, neither do they know you.
 
 Whatever tactic you employ, doing so with a sense of fun will win you
 the love of the audience, even if it doesn't win you the point.
