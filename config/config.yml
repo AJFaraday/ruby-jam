@@ -5,16 +5,21 @@
 # dev_wide
 # laptop_screen
 # square_screen
+#window_type: laptop_screen
 window_type: dev_wide
 # a .txt file in /topics
-topics: default
+#topics: rehearsal
+topics: brighton
 # Reverse order for projector display
 reverse: true
 # How many 'topics' will be displayed before round 1
-intro_rounds: 2
+intro_rounds: 1
 # list of reporters, from /lib/game/reporters
 reporters:
   - class: CommandLineReporter
     width: 100
     player_width: 25
+    active: false
+  - class: RecoveryReporter
     active: true
+    path: 'data/last.yml'
