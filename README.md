@@ -31,13 +31,11 @@ More detailed information in /docs/game/setup.md
 Operation
 ---------
 
-This will start a game, restoring from the last known data.
-
 `ruby game.rb`
 
-To start a fresh game, delete /data/last.yml or
-
-`ruby game.rb r`
+By default, this will restore from the last game data.
+You probably don't want this
+To start from a clean game, hit some keys, then press enter.
 
 Keys
 ----
