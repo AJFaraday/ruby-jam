@@ -5,6 +5,8 @@ class RestoreGame
   def self.run(window)
     restorer = self.new(window)
     restorer.run if restorer.data
+  rescue Errno::ENOENT => er
+    puts er.message
   end
 
   def initialize(window)

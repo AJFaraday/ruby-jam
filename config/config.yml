@@ -19,6 +19,6 @@ reporters:
   - class: CommandLineReporter
     width: 100
     player_width: 25
-    active: false
+    active: true
   - class: RecoveryReporter
     active: true

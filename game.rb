@@ -1,4 +1,6 @@
 require_relative 'lib/window'
 
-window = Window.new(true)
+restore = ARGV[0] != 'r'
+
+window = Window.new(restore)
 window.show
