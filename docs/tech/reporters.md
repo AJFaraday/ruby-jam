@@ -23,6 +23,7 @@ For specific classes:
 * CommandLineReporter
   * **width:** total width in characters of the output
   * **player_width:** width in characters of each panellist
+* RecoveryReporter
 
 Contract for a reporter
 -----------------------

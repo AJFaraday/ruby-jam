@@ -22,4 +22,3 @@ reporters:
     active: false
   - class: RecoveryReporter
     active: true
-    path: 'data/last.yml'

@@ -8,7 +8,7 @@ class RecoveryReporter
       File.join(
         File.dirname(__FILE__),
         '..', '..',
-        config['path']
+        'data', 'last.yml'
       ),
       'w'
     )
