@@ -9,7 +9,7 @@
 window_type: dev_wide
 # a .txt file in /topics
 #topics: rehearsal
-topics: brighton
+topics: default
 # Reverse order for projector display
 reverse: true
 # How many 'topics' will be displayed before round 1

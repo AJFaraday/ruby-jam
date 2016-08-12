@@ -1,13 +1,13 @@
 # From stage left to stage right
-- name1: Nadia
-  name2: Odunayo
+- name1: Joe
+  name2: Bloggs
   buzzer: buzz.ogg
-- name1: Kirsten
-  name2: Hunter
+- name1: Penny
+  name2: Farthing
   buzzer: buzz.ogg
-- name1: Scott
-  name2: Hanselman
+- name1: Obi Wan
+  name2: Kenobi
   buzzer: buzz.ogg
-- name1: Ruth
-  name2: John
+- name1: John
+  name2: Smith
   buzzer: buzz.ogg
