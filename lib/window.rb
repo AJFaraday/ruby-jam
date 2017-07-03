@@ -23,7 +23,7 @@ class Window < Gosu::Window
 
   include Game::Initialisers
 
-  def initialize
+  def initialize(restore=false)
     init_config
     @x_size = @config.x_size
     @y_size = @config.y_size
@@ -36,6 +36,7 @@ class Window < Gosu::Window
     init_panellists
     init_controller
     init_subjects
+    RestoreGame.run(self) if restore
     init_reporters
   end
 

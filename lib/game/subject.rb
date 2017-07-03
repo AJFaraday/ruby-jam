@@ -2,6 +2,8 @@ module Game
 
   class Subject
 
+    attr_writer :cursor
+
     def initialize(window, config)
       file = File.open(
         File.join(File.dirname(__FILE__),

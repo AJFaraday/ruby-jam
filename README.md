@@ -33,6 +33,10 @@ Operation
 
 `ruby game.rb`
 
+By default, this will restore from the last game data.
+You probably don't want this
+To start from a clean game, hit some keys, then press enter.
+
 Keys
 ----
 
